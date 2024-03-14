@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #d0d6dc;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.wrapper {
+  display: flex;
+}
+
+.left-column,
+.right-column {
+  flex: 1; /* Equal width for both columns */
+  padding: 20px; /* Adjust padding as needed */
+}
+
+.images {
+  width: 70%;
+  max-width: 100%;
+  height: 80%;
+}
+
+.header {
+  background-color: #1F2D38;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.column {
+  float: left;
+  width: 60.33%;
+  padding: 40px;
+  text-align: center;
+  color: black;
+  background-color: rgb(216, 138, 138);
+  margin: 10% 10%; /* Added space between columns */
+  box-shadow: 0 4px 8px 0 rgba(192, 187, 187, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 6px;
+}
+
+.left-column {
+  border-right: 5px solid #0f0202; /* Add border to the right side of the left column */
+}
+
+.right-column {
+  border-left: 5px solid #0a0a0a; /* Add border to the left side of the right column */
+}
+
+.column p {
+  text-align: left;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.button {
+  background-color: #d4d6c5;
+  color: #373232;
+  padding: 7px 30px 7px 30px;
+  border-radius: 35px;
+  border: 10px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button:hover {
+  background-color: #121313;
+}
+
+@media screen and (max-width:600px) {
+  .column {
+      width: 50%;
+      margin: 40% 40%; /* Adjusted margin for full width and space between stacked columns */
+  }
+}
+
+.left-wrapper,
+.right-wrapper {
+  flex: 1; /* Equal width for both columns */
+  padding: 1px; /* Adjust padding as needed */
+  border: 5px solid #1F2D38; /* Border around each column */
+  border-radius: 8px; /* Rounded corners */
+  margin: 10px; /* Adjust margin as needed */
+}
